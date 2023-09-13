@@ -38,7 +38,6 @@ public class Ruin {
 		}
 		else {
 			System.out.println(" You won");
-			wins = wins + 1;
 		}
 		System.out.println("Number of plays that took place: " + totalplays);
 		}
