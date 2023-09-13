@@ -34,14 +34,14 @@ public class Ruin {
 		System.out.print("Result of day: " + j);
 		if (money == 0) {
 			System.out.println(" You lost");
-			losses = losses -1;
+			losses = losses + 1;
 		}
 		else {
 			System.out.println(" You won");
 		}
 		System.out.println("Number of plays that took place: " + totalplays);
 		}
-		System.out.println("Actual ruin rate= " + (losses/totalSimulations)*100.0);
+		System.out.println("Actual ruin rate= " + (losses/totalSimulations));
 		double expectedRuin;
 		if(winChance == 0.5) {
 		expectedRuin = 1 - (startAmount/winLimit);
